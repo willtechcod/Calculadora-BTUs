@@ -14,7 +14,7 @@ export function Loading() {
 
 const styles = StyleSheet.create({
     container:{
-        marginTop: 480,
+        marginTop: 40,
         alignItems: 'center',
         justifyContent: 'center'
     }

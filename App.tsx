@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import Loading from './src/components/Loading';
+import { View } from 'react-native';
+
+import { Preload } from './src/screens/Preload';
 
 export default function App() {
   return (
     <View>
-      <Text>Calculadora de BTUs</Text>
+      <Preload/>
       <StatusBar style="auto" />
     </View>
   );
