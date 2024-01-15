@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Calculadora-BTUs",
-    "slug": "Calculadora-BTUs",
+    "name": "Calculadora BTUs",
+    "slug": "Calculadora BTUs",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
