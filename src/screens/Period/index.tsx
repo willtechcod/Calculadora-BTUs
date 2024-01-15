@@ -1,9 +1,9 @@
 import { View, Text } from 'react-native';
 
-export function People() {
+export function  Period() {
  return (
    <View>
-    <Text>Quantidade de Pessoas</Text>
+    <Text>Insidencia solar</Text>
    </View>
   );
 }

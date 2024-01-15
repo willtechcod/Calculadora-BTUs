@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import { Container, Title } from './styles';
+import { styles } from "./styles";
 
 import { Loading } from "../../components/Loading";
 import Icon from "../../assets/snow.svg";
+import { View } from "react-native";
 
 export function Preload(){
     const [ isLoading, setisLoading ] = useState(true);
 
     return(
-        <Container>
+        <View style={styles.container}>
             <Icon  />
             <Loading/>
-        </Container>
+        </View>
     );
 }
