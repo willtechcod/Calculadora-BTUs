@@ -1,13 +1,15 @@
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useState } from 'react';
 import { styles } from './styles';
 import { Header } from '../../components/Header';
 import { useNavigation } from '@react-navigation/native';
 
 import Icon from "../../assets/area.svg";
+import { InputArea } from '../../components/InputArea';
+
 
 export function Measure() {
   const navigation = useNavigation();
-  
 
   function handleNext(){
     navigation.navigate('windows');
@@ -29,34 +31,14 @@ export function Measure() {
         </Text>
       </View>
   </View>
-  <View style={styles.inputArea}>
-    <View style={styles.inputAreaButton}>
-      <View style={styles.inputAreaText}>
-        <Text style={styles.inputAreaButtonText}>Largura(metros)</Text>
-      </View>
-      <TextInput placeholder='0' />
-      <TouchableOpacity style={styles.inputAreaButtonMinus}>
-        <Text>-</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.inputAreaButtonAdd}>
-      <Text>+</Text>
-      </TouchableOpacity>
-    </View>
-  </View>
-  <View style={styles.inputArea}>
-    <View style={styles.inputAreaButton}>
-      <View style={styles.inputAreaText}>
-        <Text style={styles.inputAreaButtonText}>Altura(metros)</Text>
-      </View>
-      <TextInput placeholder='0' />
-      <TouchableOpacity style={styles.inputAreaButtonMinus}>
-        <Text>-</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.inputAreaButtonAdd}>
-      <Text>+</Text>
-      </TouchableOpacity>
-    </View>
-  </View>
+
+  <InputArea
+  placeholder="Largura(metros)"
+  />
+  <InputArea
+  placeholder="Altura(metros)"
+  />
+  
       <TouchableOpacity
       activeOpacity={0.7}
       onPress={handleNext}

@@ -4,10 +4,22 @@ import { Header } from '../../components/Header';
 import { useNavigation } from '@react-navigation/native';
 
 import Icon from "../../assets/windows.svg";
+import { useState } from 'react';
 
 export function Windows() {
   const navigation = useNavigation();
+  const [count, setCount] = useState<number>(0);
   
+  
+  function handlePlus(){
+      setCount(count + 1)
+  }
+
+  function handleMinus(){
+    if(count >0){
+      setCount(count - 1)
+    }
+  }
 
   function handleNext(){
     navigation.navigate('period');
@@ -34,11 +46,17 @@ export function Windows() {
       <View style={styles.inputAreaText}>
         <Text style={styles.inputAreaButtonText}>Janelas</Text>
       </View>
-      <TextInput placeholder='0' />
-      <TouchableOpacity style={styles.inputAreaButtonMinus}>
+      <Text>{count}</Text>
+      <TouchableOpacity 
+      style={styles.inputAreaButtonMinus}
+      onPress={handleMinus}
+      >
         <Text>-</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.inputAreaButtonAdd}>
+      <TouchableOpacity 
+      style={styles.inputAreaButtonAdd}
+      onPress={handlePlus}
+      >
       <Text>+</Text>
       </TouchableOpacity>
     </View>
