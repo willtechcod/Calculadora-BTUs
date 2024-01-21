@@ -21,8 +21,9 @@ export function InputArea({placeholder}) {
       <View style={styles.inputAreaText}>
         <Text style={styles.inputAreaButtonText}>{placeholder}</Text>
       </View>
-      <Text>{count}</Text>
-
+      <View style={styles.textArea}>
+        <Text style={styles.text}>{count}</Text>
+      </View>
       <TouchableOpacity 
       style={styles.inputAreaButtonMinus}
       onPress={handleMinus}
@@ -141,5 +142,13 @@ const styles = StyleSheet.create({
         color: '#ffffff',
         textTransform: 'uppercase',
         fontStyle: 'normal',
+    },
+    textArea:{
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    text:{
+        fontSize: 15,
+        fontWeight: '600'
     }
 });

@@ -46,7 +46,9 @@ export function Windows() {
       <View style={styles.inputAreaText}>
         <Text style={styles.inputAreaButtonText}>Janelas</Text>
       </View>
-      <Text>{count}</Text>
+      <View style={styles.inputAreaText}>
+        <Text>{count}</Text>
+      </View>
       <TouchableOpacity 
       style={styles.inputAreaButtonMinus}
       onPress={handleMinus}
