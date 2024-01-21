@@ -11,7 +11,7 @@ Abaixo podemos ver o resultado final do projeto. Espero que gostem!
 
 <br>
 <p align="center">
-  <img alt="uma gif do projeto" src=".github/screen.gif" width="10%">
+  <img alt="uma gif do projeto" src=".github/screen.gif" width="20%">
   </p>
 
 # 🔗 Download do projeto no link abaixo.
