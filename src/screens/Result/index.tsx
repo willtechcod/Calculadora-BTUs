@@ -1,11 +1,9 @@
-
-import { Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useState } from 'react';
+import { Text,TouchableOpacity, View } from 'react-native';
 import { styles } from './styles';
 import { Header } from '../../components/Header';
 import { useNavigation } from '@react-navigation/native';
 
-
-import { useState } from 'react';
 
 export function Result() {
   const navigation = useNavigation();
