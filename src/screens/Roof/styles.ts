@@ -37,7 +37,8 @@ export const styles = StyleSheet.create({
     selectArea:{
         width: '90%',
         height: 250,
-        marginTop: 38
+        marginTop: 38,
+        alignItems: 'center'
     },
     subTitle:{
         fontSize: 14,

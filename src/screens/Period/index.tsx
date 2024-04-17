@@ -31,9 +31,10 @@ export function Period() {
       </View>    
   </View>
       < ButtonAction
+      onPress={handleNext}
       />
   
-      <TouchableOpacity
+      {/*<TouchableOpacity
       activeOpacity={0.7}
       onPress={handleNext}
        style={styles.button}
@@ -41,7 +42,7 @@ export function Period() {
           <Text style={styles.buttonText}>
             próximo
           </Text>
-      </TouchableOpacity>
+ </TouchableOpacity>*/}
  </View>
   );
 }

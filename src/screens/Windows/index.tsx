@@ -2,23 +2,33 @@ import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { styles } from './styles';
 import { Header } from '../../components/Header';
 import { useNavigation } from '@react-navigation/native';
+import ToggleSwitch from 'toggle-switch-react-native';
 
 import Icon from "../../assets/windows.svg";
 import { useState } from 'react';
 
 export function Windows() {
   const navigation = useNavigation();
-  const [count, setCount] = useState<number>(0);
-  
+  const [window, setWindow] = useState<number>(0);
+  const [active, setActive] = useState(true);
+  const [isActive, setIsActive] = useState<number>(0);
   
   function handlePlus(){
-      setCount(count + 1)
+    setWindow(window + 1)
+      if(active){
+        const isActive = window *( 800);
+        setIsActive(isActive)
+      }
+      console.log(isActive)
   }
 
   function handleMinus(){
-    if(count >0){
-      setCount(count - 1)
+    if(window >0){
+      setWindow(window - 1)
+        const isActive = window;
+        setIsActive(isActive)
     }
+    console.log(window)
   }
 
   function handleNext(){
@@ -47,13 +57,13 @@ export function Windows() {
         <Text style={styles.inputAreaButtonText}>Janelas</Text>
       </View>
       <View style={styles.inputAreaText}>
-        <Text>{count}</Text>
+        <Text>{window}</Text>
       </View>
       <TouchableOpacity 
       style={styles.inputAreaButtonMinus}
       onPress={handleMinus}
       >
-        <Text>-</Text>
+        <Text style={styles.inputAreaButtonMinusText}>-</Text>
       </TouchableOpacity>
       <TouchableOpacity 
       style={styles.inputAreaButtonAdd}
@@ -63,7 +73,21 @@ export function Windows() {
       </TouchableOpacity>
     </View>
   </View>
- 
+    <View style={{marginTop: 50, flexDirection: 'row'}}>
+      <ToggleSwitch
+          isOn={active}
+          onColor="red"
+          offColor="#2B5B96"
+          circleColor="#E6E5E5"
+          label="Com proteção"
+          labelStyle={{ color: "black", fontWeight: "900" }}
+          size="medium"
+          onToggle={isOn => setActive(!active)}
+      />
+      <View style={{marginLeft:8}}>
+          <Text style={{fontSize:14, fontWeight:'900', alignItems:'center', justifyContent:'center'}}>Sem proteção</Text>
+      </View>
+    </View>
       <TouchableOpacity
       activeOpacity={0.7}
       onPress={handleNext}

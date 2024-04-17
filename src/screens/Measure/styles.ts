@@ -100,5 +100,14 @@ export const styles = StyleSheet.create({
         color: '#ffffff',
         textTransform: 'uppercase',
         fontStyle: 'normal',
-    }
+    },
+    textArea:{
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    inputAreaButtonMinusText:{
+        fontSize: 25,
+        fontWeight: '700',
+        fontStyle: 'normal'
+    },
 });

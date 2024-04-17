@@ -92,7 +92,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#2B5B96',
-        marginTop: 90
+        marginTop: 60
     },
     buttonText:{
         fontSize: 18,

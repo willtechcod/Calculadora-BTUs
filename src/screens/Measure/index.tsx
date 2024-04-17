@@ -1,4 +1,4 @@
-import { Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import { useState } from 'react';
 import { styles } from './styles';
 import { Header } from '../../components/Header';
@@ -33,10 +33,11 @@ export function Measure() {
   </View>
 
   <InputArea
-  placeholder="Largura(metros)"
+  placeholder="Largura (m)"
   />
+
   <InputArea
-  placeholder="Altura(metros)"
+  placeholder="Comprimento (m)"
   />
   
       <TouchableOpacity

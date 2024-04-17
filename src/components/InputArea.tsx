@@ -1,43 +1,56 @@
 import { useState } from 'react';
-import { TouchableOpacity, View, StyleSheet, Text } from 'react-native';
+import { TouchableOpacity, View, StyleSheet, Text, TextInput } from 'react-native';
 
 export function InputArea({placeholder}) {
     const [count, setCount] = useState<number>(0);
+    const [largura, setLargura] = useState<number>(1);
+    const [comprimento, setComprimento] = useState<number>(1);
+    
 
-    function handlePlus(){
+     function handlePlus(){
         setCount(count + 0.5)
+        const areaL = count * largura + 0.5;
+        const areaC = count * comprimento + 0.5;
+        const calc = areaL * areaC;
+       
+        console.log(calc, " m²")
     }
    
     function handleMinus(){
-      if(count >0){
+      if(count > 0){
         setCount(count - 0.5)
+        const areaL = count * largura - 0.5;
+        const areaC = count * comprimento - 0.5;
+        const calc = areaL * areaC;
+        
+        console.log(calc, " m²")
       }
     }
 
  return (
     <View style={styles.inputArea}>
-    <View style={styles.inputAreaButton}>
-      
-      <View style={styles.inputAreaText}>
-        <Text style={styles.inputAreaButtonText}>{placeholder}</Text>
-      </View>
-      <View style={styles.textArea}>
-        <Text style={styles.text}>{count}</Text>
-      </View>
-      <TouchableOpacity 
-      style={styles.inputAreaButtonMinus}
-      onPress={handleMinus}
-      >
-        <Text>-</Text>
-      </TouchableOpacity>
+        <View style={styles.inputAreaButton}>
+        
+        <View style={styles.inputAreaText}>
+            <Text style={styles.inputAreaButtonText}>{placeholder}</Text>
+        </View>
+        <View style={styles.textArea}>
+            <Text>{count}</Text>
+        </View>
+        <TouchableOpacity 
+        style={styles.inputAreaButtonMinus}
+        onPress={handleMinus}
+        >
+            <Text style={styles.inputAreaButtonMinusText}>-</Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity 
-      style={styles.inputAreaButtonAdd}
-      onPress={handlePlus}
-      >
-      <Text>+</Text>
-      </TouchableOpacity>
-    </View>
+        <TouchableOpacity 
+        style={styles.inputAreaButtonAdd}
+        onPress={handlePlus}
+        >
+        <Text>+</Text>
+        </TouchableOpacity>
+        </View>
   </View>
   );
 }
@@ -115,6 +128,11 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    inputAreaButtonMinusText:{
+        fontSize: 25,
+        fontWeight: '700',
+        fontStyle: 'normal'
     },
     subTitle:{
         fontSize: 14,

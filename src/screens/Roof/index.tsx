@@ -32,6 +32,9 @@ export function Roof() {
   </View>
   <View style={styles.selectArea}>
   <SelectDropdown
+        buttonStyle={{width: '95%', borderRadius:4}}
+        buttonTextStyle={{fontWeight: '700', fontSize:18, marginLeft: -180}}
+        defaultButtonText='Cobertura'
         data={countries}
         onSelect={(selectedItem, index) => {
           console.log(selectedItem, index)

@@ -74,6 +74,10 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    inputAreaButtonMinusText:{
+        fontSize: 25,
+        fontWeight: '700'
+    },
     subTitle:{
         fontSize: 14,
         fontWeight: '500',
@@ -92,7 +96,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#2B5B96',
-        marginTop: 250
+        marginTop: 180
     },
     buttonText:{
         fontSize: 18,
