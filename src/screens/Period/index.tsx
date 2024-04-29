@@ -16,9 +16,7 @@ export function Period() {
 
  return (
   <View style={styles.container}>
-  <View style={styles.header}>
-    <Header/>
-  </View>
+  
   <View style={styles.content}>
     <Icon />
       <View style={styles.infoArea}>

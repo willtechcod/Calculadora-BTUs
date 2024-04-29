@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
-    "android": "expo run:android -d Pixel_3_API_34",
+    "android": "expo run:android -d Pixel_8_Pro_API_34",
     "ios": "expo run:ios",
     "pod": "cd ios && pod install"
   },

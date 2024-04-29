@@ -3,13 +3,13 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container:{
         width: '100%',
-        height: 'auto',
+        height: '100%',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#FCFCFD',
     },
     header:{
-        marginTop: 60,
+        marginTop: -200,
         marginBottom: 50
     },
     content:{
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#2B5B96',
-        marginTop: 180
+        marginTop: 180 
     },
     buttonText:{
         fontSize: 18,
