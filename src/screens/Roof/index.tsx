@@ -32,7 +32,7 @@ export function Roof() {
       </View>
       <View style={styles.selectArea}>
         <SelectDropdown
-          buttonStyle={{ width: "95%", borderRadius: 4 }}
+          buttonStyle={{ width: "95%", borderRadius: 12 }}
           buttonTextStyle={{
             fontWeight: "700",
             fontSize: 18,

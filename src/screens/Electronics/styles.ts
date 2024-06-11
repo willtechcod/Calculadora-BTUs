@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
         height: 56,
         marginTop: 38,
         backgroundColor: '#F0F0F0',
-        borderRadius: 4,
+        borderRadius: 12,
         justifyContent: 'center'
     },
     inputAreaText:{
@@ -85,7 +85,7 @@ export const styles = StyleSheet.create({
         width: 304,
         height: 50,
         flexShrink: 0,
-        borderRadius: 4,
+        borderRadius: 12,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#2B5B96',

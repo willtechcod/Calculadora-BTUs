@@ -27,6 +27,7 @@ export function ButtonAction({onPress}){
                         <Text style={styles.title}>Manha</Text>
                         <Manha/>
                     </TouchableOpacity>
+
                     <TouchableOpacity
                     activeOpacity={0.5}
                     style={styles.button}
@@ -35,6 +36,7 @@ export function ButtonAction({onPress}){
                         <Text style={styles.title}>Tarde</Text>
                         <Tarde/>
                     </TouchableOpacity>
+
                     <TouchableOpacity
                     activeOpacity={0.5}
                     style={styles.button}
@@ -43,6 +45,7 @@ export function ButtonAction({onPress}){
                         <Text style={styles.title}>Ambos</Text>
                         <Ambos/>
                     </TouchableOpacity>
+                    
                     <TouchableOpacity
                     activeOpacity={0.5}
                     style={styles.button}
@@ -71,7 +74,7 @@ const styles = StyleSheet.create({
         borderWidth:1,
         borderColor: "#2B5B96",
         backgroundColor: "#F0F0F0",
-        borderRadius: 4,
+        borderRadius: 12,
         display: 'flex',
         flexDirection: 'row',
         padding: 18,

@@ -57,7 +57,7 @@ export function State() {
       </View>
       <View style={styles.selectArea}>
         <SelectDropdown
-          buttonStyle={{ width: "95%", borderRadius: 4 }}
+          buttonStyle={{ width: "95%", borderRadius: 12 }}
           buttonTextStyle={{
             fontWeight: "700",
             fontSize: 18,
@@ -77,7 +77,7 @@ export function State() {
           }}
         />
       </View>
-      <View style={{marginBottom: -220}}>
+      <View style={{ marginBottom: -220 }}>
         <TouchableOpacity
           activeOpacity={0.7}
           onPress={handleNext}

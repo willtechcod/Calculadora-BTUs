@@ -8,6 +8,9 @@
     ],
     "ios": {
       "bundleIdentifier": "Calculadora-BTUs"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
