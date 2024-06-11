@@ -39,7 +39,7 @@ $ npx expo start
 
 ```
 
-# Acesse o Protótipo do projeto no Figma
+# 🔗 Acesse o Protótipo do projeto no Figma
 
 link do figma: https://www.figma.com/design/oOtyi2abKtj6qfnLvdcGHJ/Calculadora-de-BTUs?node-id=0-1&t=Iuo1JBQXvitHg5h4-1
 
