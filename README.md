@@ -15,12 +15,11 @@ Abaixo podemos ver o resultado final do projeto. Espero que gostem!
   </p>
 
 # 🔗 Download do projeto no link abaixo.
+
 - [Calculadora-BTUs App](https://github.com/willtechcod/Calculadora-BTUs.git)
 
 - [Expo](https://docs.expo.dev/)
 - [React-Native](https://reactnative.dev/)
-
-
 
 ## 🌐 Para iniciarlizar o projeto utilize o comando abaixo:
 
@@ -40,7 +39,11 @@ $ npx expo start
 
 ```
 
+## Acesse o Protótipo do projeto no Figma
 
+# link de acesso:
+
+https://www.figma.com/design/oOtyi2abKtj6qfnLvdcGHJ/Calculadora-de-BTUs?node-id=0-1&t=Iuo1JBQXvitHg5h4-1
 
 <p align="center">
   <img src=".github/Icon.png" width="15%">
